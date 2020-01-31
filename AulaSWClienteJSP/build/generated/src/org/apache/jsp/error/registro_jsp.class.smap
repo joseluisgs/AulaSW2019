@@ -1,0 +1,21 @@
+SMAP
+registro_jsp.java
+JSP
+*S JSP
+*F
++ 0 registro.jsp
+error/registro.jsp
++ 1 encabezado.jsp
+error/../encabezado.jsp
++ 2 navbar.jsp
+error/../navbar.jsp
++ 3 footer.jsp
+error/../footer.jsp
+*L
+5,5:51
+5#1,60:55
+9#0:115
+5#2,20:116
+10#0,16:135
+5#3,26:150
+*E

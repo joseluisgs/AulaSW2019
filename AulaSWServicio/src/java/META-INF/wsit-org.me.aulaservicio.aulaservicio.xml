@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="aulaservicio" targetNamespace="http://aulaservicio.me.org/" xmlns:tns="http://aulaservicio.me.org/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sc="http://schemas.sun.com/2006/03/wss/server" xmlns:wspp="http://java.sun.com/xml/ns/wsit/policy" 
+ >
+    <message name="registrar"/>
+    <message name="registrarResponse"/>
+    <message name="indetificar"/>
+    <message name="indetificarResponse"/>
+    <message name="salir"/>
+    <message name="salirResponse"/>
+    <message name="usuario"/>
+    <message name="usuarioResponse"/>
+    <message name="listar"/>
+    <message name="listarResponse"/>
+    <message name="estadisticas"/>
+    <message name="estadisticasResponse"/>
+    <message name="tarjeta"/>
+    <message name="tarjetaResponse"/>
+    <message name="firmar"/>
+    <message name="firmarResponse"/>
+    <message name="validar"/>
+    <message name="validarResponse"/>
+    <message name="insertar"/>
+    <message name="insertarResponse"/>
+    <message name="eliminar"/>
+    <message name="eliminarResponse"/>
+    <portType name="aulaservicio">
+        <operation name="registrar">
+            <input message="tns:registrar"/>
+            <output message="tns:registrarResponse"/>
+        </operation>
+        <operation name="indetificar">
+            <input message="tns:indetificar"/>
+            <output message="tns:indetificarResponse"/>
+        </operation>
+        <operation name="salir">
+            <input message="tns:salir"/>
+            <output message="tns:salirResponse"/>
+        </operation>
+        <operation name="usuario">
+            <input message="tns:usuario"/>
+            <output message="tns:usuarioResponse"/>
+        </operation>
+        <operation name="listar">
+            <input message="tns:listar"/>
+            <output message="tns:listarResponse"/>
+        </operation>
+        <operation name="estadisticas">
+            <input message="tns:estadisticas"/>
+            <output message="tns:estadisticasResponse"/>
+        </operation>
+        <operation name="tarjeta">
+            <input message="tns:tarjeta"/>
+            <output message="tns:tarjetaResponse"/>
+        </operation>
+        <operation name="firmar">
+            <input message="tns:firmar"/>
+            <output message="tns:firmarResponse"/>
+        </operation>
+        <operation name="validar">
+            <input message="tns:validar"/>
+            <output message="tns:validarResponse"/>
+        </operation>
+        <operation name="insertar">
+            <input message="tns:insertar"/>
+            <output message="tns:insertarResponse"/>
+        </operation>
+        <operation name="eliminar">
+            <input message="tns:eliminar"/>
+            <output message="tns:eliminarResponse"/>
+        </operation>
+    </portType>
+    <binding name="aulaservicioPortBinding" type="tns:aulaservicio">
+        <operation name="registrar">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="indetificar">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="salir">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="usuario">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="listar">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="estadisticas">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="tarjeta">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="firmar">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="validar">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="insertar">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="eliminar">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="aulaservicio">
+        <port name="aulaservicioPort" binding="tns:aulaservicioPortBinding"/>
+    </service>
+</definitions>
